@@ -145,9 +145,9 @@ public class Player : MonoBehaviour
 
     private void HandleDie()
     {
+
         playerState = PlayerState.Idle;
         canControl = false;
-
 
         ui.SetupScore(GameModel.Score.ToString(), 0);
 
@@ -205,7 +205,6 @@ public class Player : MonoBehaviour
                 isOver = true;
                 playerState = PlayerState.Die;
                 break;
-
             case "Props":
                 HandleProps(collision.gameObject);
                 break;

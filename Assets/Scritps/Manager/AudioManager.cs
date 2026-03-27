@@ -16,7 +16,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip propClip;
     public AudioClip enemyClip;
 
-
     void Awake()
     {
         if (instance == null)
@@ -38,12 +37,6 @@ public class AudioManager : MonoBehaviour
     {
         BgmVolume();
         SfxVolume();
-    }
-
-    void Update()
-    {
-        // bgmSource.volume = bgmSlider.value;
-        // sfxSource.volume = sfxlider.value;
     }
 
     public void BgmVolume()

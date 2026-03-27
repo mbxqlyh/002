@@ -47,24 +47,10 @@ public class LevelSeletionPanel : MonoBehaviour
 
     private void SelectScene(string sceneName)
     {
-        // ui.SetupScore(GameModel.Score.ToString(), 0);
 
-        SceneLoadManager.instance.LoadGame1Sence(sceneName);
         SelectionSceneEvent.Trigger();
-        // // ui.player.canControl = true;
-        // // ui.player.isStop = false;
-        // // ui.player.GetComponent<CapsuleCollider2D>().enabled = true;
-        // // ui.player.rb.gravityScale = 1;
-        // // ui.player.Spawnwz();
-        // // Time.timeScale = 1;
-
-        // ui.scoreText.gameObject.SetActive(true);
-
-        // ui.isLoading = true;
-        // ui.StartLoading();
-        // ui.islevelShow = false;
-        // gameObject.SetActive(false);
-
+        SceneLoadManager.instance.LoadGame1Sence(sceneName);
+        gameObject.SetActive(false);
 
     }
 
